@@ -13,6 +13,16 @@
 - The frontend endpoints, are in *routes/frontend.php*, so Vue make ajax request using this endpoints
 - [FontAwesome](http://fontawesome.io/icons/) icons
 
+## Install
+
+- `git clone https://github.com/mnavarrocarter/laravel-vue-admin.git VueAdmin && cd VueAdmin`
+- `composer install`
+- `cp .env.example .env` and add your db credentials
+- `php artisan make:auth` and say no to all the questions
+- `php artisan migrate --seed`
+- `php artisan serve` and open browser
+- Login with `admin@admin.cl`. Password `123`
+
 ## Demos
 
 - Users table: Include CRUD, using server side pagination and filtering.
